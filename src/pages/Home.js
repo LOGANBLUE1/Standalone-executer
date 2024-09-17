@@ -52,16 +52,16 @@ const Home = () => {
         if(browser !== "chromium"){
             command += ` --browser=${browser}`;
         }
-        if(env !== "qa"){
+        if(env !== "QA"){
             command += ` --env=${env}`;
         }
     
-        const finalData = {
+        const form = {
             ...formData,
-            command: command
+            command
         };
     
-        invokeTask(finalData)
+        invokeTask(form)
             .then((response) => {
                 if (response.success) {
                     console.log('API Response:', response);

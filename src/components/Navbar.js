@@ -1,7 +1,6 @@
 import React from 'react'
 // import logo from "../assets/Logo.svg"
 import {Link} from "react-router-dom"
-import {toast} from "react-hot-toast"
 
 
 const Navbar = (props) => {
@@ -18,18 +17,8 @@ const Navbar = (props) => {
                 <li>
                     <Link to="/execution">Execution</Link>
                 </li>
-                <li>
-                    <Link to="/dashboard">Dashboard</Link>
-                </li>
-                {/* <li>
-                    <Link to="/">Execution</Link>
-                </li>
-                <li>
-                    <Link to="/">Contact</Link>
-                </li> */}
             </ul>
         </nav>
-      
     </div>
   )
 }
