@@ -1,4 +1,4 @@
-import { apiConnector } from './apiConnector';
+import { apiConnector } from '../utils/apiConnector';
 
 export const invokeTask = async (formData) => {
     console.log('Invoking task with data:', formData);

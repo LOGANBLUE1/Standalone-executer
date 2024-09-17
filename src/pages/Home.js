@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import {toast} from "react-hot-toast"
-import {invokeTask} from "./../invokeTask";
+import {invokeTask} from "../apiconnection/invokeTask";
 
 const Home = () => {
     const [formData, setFormData] = useState({
